@@ -41,31 +41,31 @@ export default defineConfig({
               { text: 'extractStreamUrl', link: '/modules/module-functions/extractStreamUrl' }
             ]
           },
-          // { text: 'Legacy Documentation', link: '/modules/legacy-documentation' }
-
+          { text: 'Tips & Troubleshooting', link: '/modules/tips-and-troubleshooting.md' },
+          { text: 'Distributing', link: '/modules/distributing' },
         ]
       },
-      // {
-      //   text: 'App',
-      //   items: [
-      //     { text: 'Getting Started', link: '/app/getting-started' },
-      //     { text: 'Configuration', link: '/app/configuration' },
-      //     { text: 'Modules', link: '/app/modules' },
-      //     { text: 'API', link: '/app/api' }
-      //   ]
-      // },
       {
         text: 'About',
         items: [
           { text: 'About Sora', link: '/about/sora' },
-          { text: 'Our Team', link: '/about/team' },
+          // { text: 'Our Team', link: '/about/team' },
         ]
       }
     ],
 
+    footer: {
+      message: 'Made with ❤️ by Cufiy',
+      copyright: 'Copyright © 2025 Sora Team. All rights reserved.'
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/cranci1/Sora' },
       { icon: 'discord', link: 'https://go.jm26.net/sora-discord' }
-    ]
+    ],
+    externalLinkIcon: true,
+    editLink: {
+      pattern: 'https://github.com/JMcrafter26/sora-docs/edit/main/src/:path'
+    }
   }
 })

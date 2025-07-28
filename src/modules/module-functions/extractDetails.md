@@ -1,17 +1,24 @@
-# extractDetails
 
-This function extracts details for a specific item (e.g., anime, movie, show).
+# :bookmark: extractDetails
 
-## Signature
+The `extractDetails` function fetches and returns detailed information about a specific item (such as an anime, movie, or show) from your source. This is used to display extra info when a user selects a result. :information_source:
+
+
+## :bookmark_tabs: Signature
+
 ```js
 async function extractDetails(url)
 ```
 
-## Input
-- `url` (string): The URL of the item.
 
-## Output
-- Stringified JSON object:
+## :pencil2: Input
+
+- `url` (string): The URL of the item to fetch details for.
+
+
+## :outbox_tray: Output
+
+- Stringified JSON object with details:
 
 ```json
 {
@@ -21,10 +28,13 @@ async function extractDetails(url)
 }
 ```
 
-> **Tip:**
+
+> :bulb: **Tip:**
 > If your source doesn't provide certain details, you can use alternatives like Genre, Studio, etc. Just keep the keys consistent.
 
-## Example Implementation
+
+## :computer: Example Implementation
+
 ```js
 async function extractDetails(url) {
     try {
@@ -49,3 +59,10 @@ async function extractDetails(url) {
     }
 }
 ```
+
+
+---
+
+::: info :question: Need help?
+If you’re having trouble with this function, check out the [Tips and Troubleshooting](https://sora.jm26.net/docs/modules/tips-and-troubleshooting) page for common issues and solutions. As always, feel free to ask for help in the [Sora Discord server](https://discord.gg/3a2c5b6):speech_balloon:
+:::

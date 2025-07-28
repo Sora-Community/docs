@@ -23,7 +23,7 @@ Sora uses a simple, flexible JSON file to manage and integrate different streami
 | `quality`        | string   | Quality of the stream.                                                      | ✅        | `360p`, `720p`, `1080p`              |
 | `searchBaseUrl`  | string   | Search URL of the source. Must include `%s` for the search query.           | ✅        | `%s`                                 |
 | `scriptUrl`      | string   | URL to the raw link of the JavaScript file.                                 | ✅        |                                      |
-| `type`           | string   | Category of what the site provides. Required for the module library.        | ❎        | `anime`, `movies`, `shows`, `novels` |
+| `type`           | string   | Category of what the site provides. Required for the module library.        | ✅        | `anime`, `movies`, `shows`, `novels` |
 | `downloadSupport`| boolean  | Set to `true` if the module supports episode downloads.                     | ❎        | `true`, `false`                      |
 | `asyncJS`        | boolean  | Set to `true` to load the script asynchronously.                            | ❌        | `true`, `false`                      |
 | `streamAsyncJS`  | boolean  | Set to `true` to only load the stream function asynchronously.              | ❌        | `true`, `false`                      |
@@ -67,9 +67,10 @@ This is a template that you can fill in with your specific details:
 }
 ```
 
-> 📝 **Note:**
-> - All required fields must be present for your module to work.
-> - Optional fields can be omitted if not needed.
+::: info 📝 Note
+- All required fields must be present for your module to work.
+- Optional fields can be omitted if not needed.
+:::
 
 ### In depth Explanation of Fields
 
@@ -153,7 +154,7 @@ A quick way to do this is to use Google: `https://www.google.com/s2/favicons?sz=
 #### `type`
 - **Type**: `string`
 - **Required**: ✅
-- **Description**: The type of content provided by the source, mainly used for categorization in the module library.
+- **Description**: The type of content provided by the source, used for categorization.
 - **Example**: `"type": "anime"`
 - **Options**: `anime`, `movies`, `shows`, `novels`
 - **Note**: You can set multiple types if the source provides different categories of content. For example, if a source provides both anime and movies, you can set `"type": "anime/movies"`.

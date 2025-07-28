@@ -1,7 +1,5 @@
-<script setup>
-import { VPTeamMembers } from 'vitepress/theme'
 
-const members = [
+const team = [
     {
         avatar: 'https://www.github.com/cranci1.png',
         name: 'Cranci',
@@ -71,15 +69,7 @@ const members = [
         title: 'Developer',
         links: [
             { icon: 'github', link: 'https://github.com/jmcrafter26' },
+            { icon: 'discord', link: 'https://discordapp.com/users/606801871189049344' }
         ]
     },
 ];
-</script>
-
-## Our Team
-
-Say hello to our awesome team.
-
-That's not all. I just didn't have time to add all the members yet.
-
-<VPTeamMembers size="small" :members />

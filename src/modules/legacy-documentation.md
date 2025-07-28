@@ -93,13 +93,13 @@ Due to the limitations of Swift's JavaScriptCore framework, certain JavaScript f
 
 #### fetch(URL, headers) (DEPRECATED)
 
-```{warning}
+```
 This function will be deprecated soon. Please use fetchv2() instead.
 ```
 
 Returns the fetched URL as a `String`
 
-```{warning} 
+```
 Do not use .json() or .text() methods as those will not work with this fetch! 
 If you want to use these functions, than look at the fetchv2() documentation.
 ```

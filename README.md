@@ -1,8 +1,10 @@
 # Sora Documentation
 
+
 <div style="text-align: center; margin-bottom: 20px;">
-  <img src="./src/assets/sora-logo.png" alt="Sora Logo" style="max-height: 200px; width: auto; margin-bottom: 10px;">
+  <img src="./src/assets/sora-logo.png" alt="Sora Logo" style="max-height: 120px; width: auto; margin-bottom: 10px;">
 </div>
+
 
 Welcome to the Sora documentation! This is your go-to resource for everything related to Sora, including module development, app features, and community contributions.
 
