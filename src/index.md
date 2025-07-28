@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Sora Documentation"
-  tagline: Sora App and Modules Documentation
+  tagline: Sora Modules Documentation
   image:
     src: /assets/sora-logo.png
   actions:
@@ -25,3 +25,6 @@ features:
   - icon: 🚀
     title: Constantly Evolving
     details: Sora is constantly evolving with new features and improvements
+
+footer:
+  message: "Made with ❤️ by Cufiy"

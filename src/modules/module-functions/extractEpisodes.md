@@ -1,17 +1,24 @@
-# extractEpisodes
 
-This function lists episodes for a show or movie.
+# :clapper: extractEpisodes
 
-## Signature
+The `extractEpisodes` function lists all episodes for a show or movie, so users can pick which one to watch. It should return a list of episode links and numbers in the correct order. :tv:
+
+
+## :bookmark_tabs: Signature
+
 ```js
 async function extractEpisodes(url)
 ```
 
-## Input
-- `url` (string): The URL of the show/movie.
 
-## Output
-- Stringified JSON array of objects:
+## :pencil2: Input
+
+- `url` (string): The URL of the show or movie to fetch episodes for.
+
+
+## :outbox_tray: Output
+
+- Stringified JSON array of objects, each representing an episode:
 
 ```json
 [
@@ -23,11 +30,13 @@ async function extractEpisodes(url)
 ]
 ```
 
-::: warning Important
-Return `number` as a number, not a string. Use `parseInt(number)` if needed.
-:::
 
-## Example Implementation
+> :warning: **Important:**
+> Return `number` as a number, not a string. Use `parseInt(number)` if needed.
+
+
+## :computer: Example Implementation
+
 ```js
 async function extractEpisodes(url) {
     try {
@@ -46,3 +55,10 @@ async function extractEpisodes(url) {
     }
 }
 ```
+
+
+---
+
+::: info :question: Need help?
+If you’re having trouble with this function, check out the [Tips and Troubleshooting](https://sora.jm26.net/docs/modules/tips-and-troubleshooting) page for common issues and solutions. As always, feel free to ask for help in the [Sora Discord server](https://discord.gg/3a2c5b6):speech_balloon:
+:::
