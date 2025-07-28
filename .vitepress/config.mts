@@ -49,7 +49,7 @@ export default defineConfig({
         text: 'About',
         items: [
           { text: 'About Sora', link: '/about/sora' },
-          // { text: 'Our Team', link: '/about/team' },
+          { text: 'Our Team', link: '/about/team' },
         ]
       }
     ],
