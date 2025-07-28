@@ -10,10 +10,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /getting-started
-    - theme: alt
-      text: Create Module
       link: /modules/getting-started
+    - theme: alt
+      text: Quickstart Guide
+      link: /modules/quickstart
 
 features:
   - icon: ✨
