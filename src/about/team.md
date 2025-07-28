@@ -11,6 +11,16 @@ const members = [
             { icon: 'discord', link: 'https://discordapp.com/users/908762694096654397' }
         ]
     },
+        // https://github.com/cufiy
+    {
+        avatar: 'https://www.github.com/cufiy.png',
+        name: 'Cufiy',
+        title: 'Web Developer',
+        links: [
+      { icon: 'github', link: 'https://github.com/jmcrafter26' },
+      { icon: 'discord', link: 'https://discordapp.com/users/606801871189049344' }
+    ]
+    },
     {
         avatar: 'https://www.github.com/seeike.png',
         name: 'Seeike',
@@ -118,17 +128,8 @@ const members = [
             { icon: 'github', link: 'https://github.com/ShadeOfChaos' },
             // { icon: 'discord', link: 'https://discordapp.com/users/1008858706266467328' }
         ]
-    },
-    // https://github.com/cufiy
-    {
-        avatar: 'https://www.github.com/cufiy.png',
-        name: 'Cufiy',
-        title: 'Web Developer',
-        links: [
-      { icon: 'github', link: 'https://github.com/jmcrafter26' },
-      { icon: 'discord', link: 'https://discordapp.com/users/606801871189049344' }
-    ]
-  }
+    }
+  
 ]
 </script>
 
