@@ -6,7 +6,7 @@ hero:
   name: "Sora Documentation"
   tagline: Sora Modules Documentation
   image:
-    src: /assets/sora-logo.png
+    src: /sora-logo.png
   actions:
     - theme: brand
       text: Get Started

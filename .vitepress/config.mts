@@ -6,6 +6,7 @@ export default defineConfig({
   description: "App and Modules Documentation",
   srcDir: './src/',
   lastUpdated: true,
+  base: '/docs/',
 
   sitemap: {
     hostname: 'https://sora.jm26.net/docs/'
@@ -13,7 +14,7 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: 'assets/sora-logo.png',
+    logo: '/sora-logo.png',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Modules', link: '/modules/getting-started' },
@@ -65,7 +66,7 @@ export default defineConfig({
     ],
     externalLinkIcon: true,
     editLink: {
-      pattern: 'https://github.com/JMcrafter26/sora-docs/edit/main/src/:path'
+      pattern: 'https://github.com/Sora-Community/sora-docs/edit/main/src/:path'
     }
   }
 })
