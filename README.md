@@ -2,7 +2,7 @@
 
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <img src="./src/public/sora-logo.png" alt="Sora Logo" style="max-height: 120px; width: auto; margin-bottom: 10px;">
+  <img src="./.github/banner-clear.png" alt="Sora Docs - Your guide to Sora modules, features, and community contributions." style="max-height: 600px; width: auto; margin-bottom: 10px;">
 </div>
 
 
