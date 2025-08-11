@@ -23,7 +23,7 @@ If you want to contribute to the Sora documentation, you can do so by following 
 
 ## Contributors
 
-<a href="https://github.com/JMcrafter26/docs/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=JMcrafter26/docs" />
+<a href="https://github.com/com/Sora-Community/docs/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=com/Sora-Community/docs" />
 </a>
 
