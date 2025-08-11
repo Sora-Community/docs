@@ -51,18 +51,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
-      - name: Upload to Sora.jm26.net via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: .vitepress/dist/
-          server-dir: /
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
 
   # Deployment job
   deploy:
@@ -83,27 +71,24 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy to FTP
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v3
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
         with:
-          version: 9
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: pnpm
-      - name: Install dependencies
-        run: pnpm install
-      - name: Build with VitePress
-        run: pnpm docs:build
+          name: github-pages
+          path: ./artifact
+      - name: Extract artifact
+        run: |
+          cd ./artifact
+          tar -xf artifact.tar
+          mv ./* ../dist/ 2>/dev/null || true
+          cd ..
       - name: Deploy to FTP Server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: .vitepress/dist/
+          local-dir: dist/
           server-dir: /
           exclude: |
             **/.git*
