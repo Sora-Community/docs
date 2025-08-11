@@ -12,14 +12,32 @@ Welcome to the Sora documentation! This is your go-to resource for everything re
 
 ## Contributing to Docs
 
-If you want to contribute to the Sora documentation, you can do so by following these steps:
-1. **Learn Markdown**: Familiarize yourself with [Markdown](https://commonmark.org/help/tutorial/index.html), the markup language used for formatting documentation.
-2. **Fork the Repository**: Click the "Fork" button on this repository to create your own copy.
-3. **Clone Your Fork**: Use `git clone` to clone your forked repository to your local machine.
-4. **Make Changes**: Edit the Markdown files in the `src` directory to add or update documentation.
-5. **Commit Your Changes**: Use `git commit` to commit your changes with a meaningful message.
-6. **Push to Your Fork**: Use `git push` to push your changes back to your forked repository.
-7. **Create a Pull Request**: Go to the original repository and create a pull request to propose your changes.
+Interested in improving the Sora documentation? Follow these simple steps:
+
+1. **Learn Markdown**  
+  Get familiar with [Markdown](https://commonmark.org/help/tutorial/index.html), the language used for our docs.
+
+2. **Fork the Repository**  
+  Click the "Fork" button at the top of this repository to create your own copy.
+
+3. **Clone Your Fork**  
+  Run `git clone` to download your forked repository to your computer.
+
+4. **Edit Documentation**  
+  Make changes or add new content to the Markdown files in the `src` directory.
+
+  This project uses _VitePress_ for documentation generation, so be sure to follow its conventions. [VitePress Documentation](https://vitepress.vuejs.org/)
+
+5. **Commit Your Changes**  
+  Use `git commit` and write a clear, descriptive message about your updates.
+
+6. **Push to Your Fork**  
+  Run `git push` to upload your changes to your forked repository on GitHub.
+
+7. **Create a Pull Request**  
+  Visit the original repository and open a pull request to suggest your changes.
+
+Your contributions help make Sora better for everyone—thank you!
 
 ## Contributors
 

@@ -66,7 +66,7 @@ export default defineConfig({
     ],
     externalLinkIcon: true,
     editLink: {
-      pattern: 'https://github.com/Sora-Community/sora-docs/edit/main/src/:path'
+      pattern: 'https://github.com/Sora-Community/docs/edit/main/src/:path'
     }
   }
 })
