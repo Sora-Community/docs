@@ -36,7 +36,7 @@ Every Sora module consists of a *manifest JSON* file and a *JavaScript* file tha
 ## :wrench: Module Functions
 
 ::: tip
-You can download the JavaScript template file [here](/docs/module-template.js).
+You can download the JavaScript template file [here](/module-template.js).
 :::
 
 
