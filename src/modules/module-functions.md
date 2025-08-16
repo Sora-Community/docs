@@ -3,7 +3,7 @@
 This page explains the overall structure for Sora module scripts and links to detailed guides for each required function.
 
 ::: tip
-Download the JavaScript template file [here](https://sora.jm26.net/docs/assets/module-template.js) to get started quickly.
+Download the JavaScript template file [here](/docs/module-template.js) to get started quickly.
 :::
 
 ## 🚦 Quick Overview
