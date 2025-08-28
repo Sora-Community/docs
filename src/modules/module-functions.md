@@ -28,9 +28,13 @@ In **async JavaScript mode**, Sora:
 
 ### Other JavaScript Modes
 
-Sora supports other JavaScript modes, but they are not recommended. Async mode is the most efficient and straightforward approach for building Sora modules. Starting with Sora 2.0.0, non-async modules will no longer be supported.
+::: warning
+Starting with Sora 2.0.0, non-async modules will no longer be supported.
+:::
 
-If you still want to use other modes, you can find more information in the [legacy documentation](/modules/legacy-documentation).
+Sora supports other JavaScript modes, but they are not recommended. Async mode is the most efficient and straightforward approach for building Sora modules.
+
+If you still want to use other modes (not recommended), you can find more information in the [legacy documentation](/modules/legacy-documentation).
 
 <!-- 
 ## 📝 Tips & Best Practices
