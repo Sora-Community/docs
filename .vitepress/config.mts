@@ -1,7 +1,8 @@
+import { withPwa } from '@vite-pwa/vitepress'
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withPwa(defineConfig({
   title: "Sora Documentation",
   description: "App and Modules Documentation",
   srcDir: './src/',
@@ -68,5 +69,61 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/Sora-Community/docs/edit/main/src/:path'
     }
+  },
+  /* Vite PWA Options */
+  pwa: {
+    mode: 'development',
+    base: '/docs/',
+    scope: '/docs/',
+    includeAssets: ['favicon.ico', 'sora-logo.png'],
+    registerType: 'prompt',
+    // Workbox configuration
+    workbox: {
+      globDirectory: '.vitepress/dist/',
+      globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}'],
+      runtimeCaching: [
+        {
+          urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'google-fonts-cache',
+            expiration: {
+              maxEntries: 10,
+              maxAgeSeconds: 60 * 60 * 24 * 365 // <== 365 days
+            }
+          }
+        }
+      ]
+    },
+    // Manifest configuration
+    manifest: {
+      name: 'Sora Documentation',
+      short_name: 'Sora Docs',
+      description: 'Complete documentation for Sora app and module development - your guide to building streaming modules',
+      theme_color: '#ef630b',
+      background_color: '#ffffff',
+      display: 'standalone',
+      orientation: 'any',
+      scope: '/docs/',
+      start_url: '/docs/',
+      lang: 'en',
+      categories: ['productivity', 'developer', 'documentation'],
+      icons: [
+        {
+          src: 'sora-logo.png',
+          sizes: '192x192',
+          type: 'image/png',
+          purpose: 'any maskable'
+        }
+      ]
+    },
+    // Development options
+    devOptions: {
+      enabled: true,
+      suppressWarnings: true,
+      navigateFallback: '/docs/',
+      navigateFallbackAllowlist: [/^\/docs\//],
+      type: 'module'
+    }
   }
-})
+}))

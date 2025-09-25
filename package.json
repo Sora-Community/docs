@@ -1,6 +1,8 @@
 {
   "devDependencies": {
-    "vitepress": "^1.6.3"
+    "@vite-pwa/vitepress": "^1.0.0",
+    "vitepress": "^1.6.3",
+    "workbox-window": "^7.3.0"
   },
   "scripts": {
     "docs:dev": "vitepress dev",
