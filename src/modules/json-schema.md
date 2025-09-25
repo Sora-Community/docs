@@ -186,36 +186,6 @@ A quick way to do this is to use Google: `https://www.google.com/s2/favicons?sz=
 - **Note**: Soft subtitles are subtitles that can be turned on or off by the user, as opposed to hardcoded subtitles that are permanently embedded in the video.
 
 
-
-## 🎉 Real-World Example
-
-Here is a real-world example of a module configuration for AniCrush, an anime streaming source, which provides English-subbed content. You can use this as a reference for your own module development:
-
-```json
-{
-    "sourceName": "AniCrush (ENG SUB)",
-    "iconUrl": "https://raw.githubusercontent.com/ShadeOfChaos/Sora-Modules/refs/heads/main/AniCrush/logo.png",
-    "author": {
-        "name": "ShadeOfChaos",
-        "icon": "https://raw.githubusercontent.com/ShadeOfChaos/Sora-Modules/refs/heads/main/ofchaos.jpg",
-        "url": "https://github.com/ShadeOfChaos/Sora-Modules"
-    },
-    "version": "2.2.3",
-    "language": "English (SUB)",
-    "streamType": "HLS",
-    "quality": "1080p",
-	"type": "anime",
-    "downloadSupport": true,
-    "baseUrl": "https://megacloud.club/",
-    "searchBaseUrl": "https://ac-api.ofchaos.com/api/anime/search?keyword=%s",
-    "scriptUrl": "https://raw.githubusercontent.com/ShadeOfChaos/Sora-Modules/refs/heads/main/AniCrush/subs/AniCrush.js",
-    "asyncJS": true,
-    "streamAsyncJS": true,
-    "softsub": true,
-    "downloadSupport": true
- }
-```
-
 ---
 
 
